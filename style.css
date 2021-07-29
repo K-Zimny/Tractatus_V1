@@ -1,0 +1,17 @@
+/*
+ Theme Name:   Tractatus
+ Theme URI:
+ Description:
+ Author:       Ken Zimny
+ Author URI:
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:
+ Text Domain:  twentynineteenchild
+*/
+
+h1:not(.site-title):before, h2:before {
+    content: none;
+}
