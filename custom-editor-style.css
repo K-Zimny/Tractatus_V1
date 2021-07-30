@@ -1,0 +1,27 @@
+/* Group block styles */
+
+.wp-block-group__inner-container.block-editor-block-list__layout {
+    border: 1px solid black;
+}
+
+/* h1 styles */
+
+h1::before {
+    content: none;
+}
+
+/* p styles */
+
+.block-editor-rich-text__editable.block-editor-block-list__block.wp-block.wp-block-paragraph.rich-text {
+    border: 1px solid gray;
+    margin: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .wp-block {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

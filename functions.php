@@ -21,9 +21,16 @@ function my_theme_enqueue_styles() {
 /*enqueue font*/
 
 function wpb_add_google_fonts() {
-        wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap', false );
+        wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap', false );
     }
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
+/* Registers an editor stylesheet for the theme.*/
+
+function wpdocs_theme_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 
 
 ?>
