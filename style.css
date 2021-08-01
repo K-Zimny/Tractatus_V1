@@ -41,8 +41,8 @@
 .entry .entry-summary > *,
 .entry .entry-summary > .wp-block-group > .wp-block-group__inner-container > *,
 .entry .entry-content > .wp-block-group > .wp-block-group__inner-container > * {
-  margin: 32px 0;
-  max-width: 100%;
+  margin: unset;
+  max-width: unset;
 }
 
 @media only screen and (min-width: 768px) {
@@ -50,8 +50,8 @@
   .entry .entry-summary > *,
   .entry .entry-summary > .wp-block-group > .wp-block-group__inner-container > *,
   .entry .entry-content > .wp-block-group > .wp-block-group__inner-container > * {
-    margin: 32px 0;
-    max-width: 100%;
+    margin: unset;
+    max-width: unset;
   }
 }
 
@@ -60,8 +60,8 @@
   .entry .entry-summary > *,
   .entry .entry-summary > .wp-block-group > .wp-block-group__inner-container > *,
   .entry .entry-content > .wp-block-group > .wp-block-group__inner-container > * {
-    margin: 32px 0;
-    max-width: 100%;
+    margin: unset;
+    max-width: unset;
   }
 }
 
@@ -85,16 +85,179 @@ body {
 /* ============================================================================================================================================================== */
 
 p {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 30px;
-    font-weight: regular;
-    line-height: 38px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: regular;
+  line-height: 38px;
 }
 
 .sc-lg-p p{
-    font-family: 'Source Code Pro', monospace;
-    font-size: 50px;
-    font-weight: regular;
-    line-height: 61px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 61px;
+}
+
+/* ============================================================================================================================================================== */
+/* Widths */
+/* ============================================================================================================================================================== */
+
+/********** Site container widths ***********/
+
+.fixed-1440 {
+  max-width: 1440px !important;
+  width: 95% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .fixed-1440 {
+    width: 85% !important;
+  }
+
+}
+
+/********** end site container widths ***********/
+
+/********** widths ***********/
+
+.width-100 {
+  width: 100px !important;
+  max-width: 100% !important;
+}
+
+.width-200 {
+  width: 200px !important;
+  max-width: 100% !important;
+}
+
+.width-300 {
+  width: 300px !important;
+  max-width: 100% !important;
+}
+
+.width-400 {
+  width: 400px !important;
+  max-width: 100% !important;
+}
+
+.width-500 {
+  width: 500px !important;
+  max-width: 100% !important;
+}
+
+.width-600 {
+  width: 600px !important;
+  max-width: 100% !important;
+}
+
+.width-700 {
+  width: 700px !important;
+  max-width: 100% !important;
+}
+
+.width-800 {
+  width: 800px !important;
+  max-width: 100% !important;
+}
+
+.width-900 {
+  width: 900px !important;
+  max-width: 100% !important;
+}
+
+.width-1000 {
+  width: 1000px !important;
+  max-width: 100% !important;
+}
+
+.width-1100 {
+  width: 1100px !important;
+  max-width: 100% !important;
+}
+
+.width-1200 {
+  width: 1200px !important;
+  max-width: 100% !important;
+}
+
+.width-1300 {
+  width: 1300px !important;
+  max-width: 100% !important;
+}
+
+.width-1400 {
+  width: 1400px !important;
+  max-width: 100% !important;
+}
+
+/********** end widths ***********/
+
+/* ============================================================================================================================================================== */
+/* Margins */
+/* ============================================================================================================================================================== */
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.mlr-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ============================================================================================================================================================== */
+/* Home */
+/* ============================================================================================================================================================== */
+
+.home-background {
+  background:linear-gradient(to bottom, rgba(0, 108, 255, .5), rgba(227, 11, 122, .5), rgba(54, 240, 255, .5), rgba(7, 255, 131, .5)),
+  url('img/home-background-black.jpg'), rgba(0, 0, 0, .5);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+/* .glass p::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 12px #000000;
+  mix-blend-mode: overlay;
+  border: 1px solid #FFFFFF;
+  opacity: 1;
+  backdrop-filter: blur(27px);
+  -webkit-backdrop-filter: blur(27px);
+} */
+
+/* .glass p {
+  position: relative;
+} */
+
+.glass p::before {
+  background: rgba(0,0,0,0);
+  /* backdrop-filter: saturate(180%) blur(10px); */
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+}
+
+.glass p {
+  position: relative;
 }
 
