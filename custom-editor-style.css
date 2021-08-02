@@ -2,6 +2,7 @@
 
 .wp-block-group__inner-container.block-editor-block-list__layout {
     border: 1px solid black;
+    padding: 15px;
 }
 
 /* h1 styles */
@@ -14,7 +15,7 @@ h1::before {
 
 .block-editor-rich-text__editable.block-editor-block-list__block.wp-block.wp-block-paragraph.rich-text {
     border: 1px solid gray;
-    margin: 20px;
+    padding: 15px;
 }
 
 @media only screen and (min-width: 768px) {
