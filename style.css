@@ -505,14 +505,24 @@ p {
 
 .home-contact .wp-block-column {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home-contact .wp-block-column:nth-child(2) {
+  margin-left: 70px !important;
 }
 
 .home-contact h2 {
   text-shadow: 1px 1px 12px rgb(0,0,0, .16);  
+  letter-spacing: 10px;
 }
 
 .home-contact p {
-  text-shadow: 1px 1px 12px rgb(0,0,0, .16);  
+  text-shadow: 1px 1px 12px rgb(0,0,0, .16);
+  letter-spacing: 5px;  
 }
 
 /* contact form styles */
@@ -529,11 +539,15 @@ p {
 .tractatus-contact textarea {
   background: transparent !important;
   border: none !important;
-  border-bottom: 1px solid #707070 !important;
+  border-bottom: 1px solid #FF3E3E !important;
+  box-shadow: 0px 12px 12px -14px #ff3e3e !important;
   font-family: 'Raleway', sans-serif !important;
   font-size: 22px !important;
   font-weight: 400 !important;
   line-height: 35px !important;
+  caret-color: #fff !important;
+  color: #fff !important;
+  margin-bottom: 10px !important;
 }
 
 .tractatus-contact input{
@@ -553,6 +567,39 @@ p {
   max-width: 100%;  
   text-shadow: 1px 1px 12px rgb(0,0,0, .16) !important; 
 }
+
+div.wpforms-container-full .wpforms-form .wpforms-required-label {
+  color: #fff !important;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.tractatus-contact button {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 40px !important;
+  font-weight: 500 !important;
+  line-height: 35px !important; 
+  padding: 10px 25px !important; 
+  background: #fff !important;
+  color: #000 !important;
+  transition: all ease .3s;
+  border: 1px solid #000 !important;
+}
+
+.tractatus-contact button:hover,
+.tractatus-contact button:focus,
+.tractatus-contact button:active {
+  transform: scale(1.05);
+  background: #000 !important;
+  color: #fff !important;
+}
+
+
+
+
 
 /* end contact form styles */
 
